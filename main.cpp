@@ -10,6 +10,7 @@
 #include <iostream>
 #include <sstream>
 #include <ranges>
+#include <ctime>
 
 std::string genTelemetryString() {
     const int cpu = std::rand() % 100;
@@ -29,7 +30,7 @@ int main() {
 
     // std::cout << "CPP_VERSION=" << __cplusplus << std::endl;    // DEBUG
 
-    std::srand(123); // eventually update to seed using std::time for robustness
+    std::srand(std::time(NULL)); // eventually update to seed using std::time for robustness
     std::cout << "Hello Jacob! This is a sample telemetry tool." << std::endl;
     std::cout << "=============================================" << std::endl;
     for (int i : std::views::iota(1, 50)) {
