@@ -12,8 +12,13 @@ The repository also demonstrates patterns for handling high-frequency data strea
 Another focus of the project is the representation and visualization of derived telemetry metrics. By transforming low-level signals into higher-order constructs, the tool illustrates how raw data can be contextualized to support diagnostics, analytics, and decision-making. While the data itself is entirely synthetic, the transformation logic mirrors real-world scenarios, including signal fusion, anomaly detection heuristics, and temporal correlation across multiple data sources.
 
 # BUILD PROCESS:
-In an Ubuntu environment, run the following command:
-g++ -std=c++20 main.cpp -o companyTool
+In an Ubuntu environment, run the following commands:
 
+To Build:
+    `g++ -std=c++20 main.cpp -o companyTool`
+
+To Run
+    `./companyTool`
+    
 # SUMMARY:
 Finally, TopSecretAutomotiveTelemetryTool is intended as a pedagogical artifact. It is structured to be readable and extensible, making it suitable for code reviews, architectural discussions, and onboarding exercises. The absence of real deployment constraints allows contributors to focus on system design principles, interface clarity, and maintainability, rather than environment-specific concerns.
