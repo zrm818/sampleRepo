@@ -17,7 +17,7 @@ std::string genTelemetryString() {
     const int mem = std::rand() % 65536;
     const int pid = std::rand() % 64;
 
-    std::string s = std::format("PID = {}, CPU_PCT = {}, MEM_UTIL = {}", pid, cpu, mem); 
+    std::string s = std::format("PID = {}, CPU_PCT = {}, MEM_PCT = {}", pid, cpu, mem); 
 
     return s;
 }
